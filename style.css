@@ -1,0 +1,372 @@
+html,
+body {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    overflow-x:;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.tabbar {
+    display: block;
+    position:sticky;
+    top: 0;
+    width: calc(100% - 16px 32px);
+    height: 20px;
+    background: white;
+    box-shadow: 0px 1px 1px 0px black;
+    font-family: Verdana, sans-serif;
+    font-size: 15px !important;
+    padding: 16px 32px;
+    border-top-left-radius: 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    z-index: 1;
+
+}
+
+.tab-left {
+    float: left;
+}
+
+.tab-right {
+    float: right;
+
+}
+
+.tabbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.link:hover {
+    background-color: gainsboro;
+}
+
+.firstimg {
+    width: 100%;
+    height: 75vh;
+    position: relative;
+    object-position: bottom;
+    object-fit: fill;
+
+}
+
+.firstimgtext {
+    position: absolute;
+    top: 42%;
+    left: 37%;
+    font-size: 36px !important;
+
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 10px 32px;
+}
+
+.pictures8 {
+    position: relative;
+    width: 225px;
+    height: 210px;
+    margin: 10px;
+}
+
+.projectimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.projecttext {
+    background-color: black;
+    color: white;
+    position: absolute;
+    padding: 4px 3px;
+}
+
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 10px 32px;
+
+}
+
+.aboutimg {
+    position: relative;
+    width: 225px;
+    height: 210px;
+    margin: 10px;
+}
+
+.imagegray {
+    filter: grayscale(70%);
+    width: 100%;
+}
+
+
+
+.contact { 
+    width: 100%;
+    height: 40px;
+    border: none;
+    font-size: 20px;
+}
+
+.contact:hover {
+    background-color: gainsboro;
+}
+
+input {
+    width: calc(94% - 8px);
+    height: 15px;
+    margin: 0px 0px 18px 32px;
+    font-size: 15px;
+    padding: 8px;
+    display: block;
+}
+
+.messagebutton {
+    margin: 25px 0px 18px 32px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    width: 20%;
+    font-size: 20px;
+    border: none;
+
+}
+
+.messagebutton:hover {
+    background-color: gainsboro;
+}
+
+footer {
+
+    width: calc(100% - 16px -2px);
+    height: 50px;
+    background: black;
+    color: white;
+    box-shadow: 0px 1px 1px 0px black;
+    font-family: verdana, sans-serif;
+    padding: 16px;
+    border-bottom-left-radius: 10px;
+    font-size: 15px;
+    line-height: 1.5;
+
+
+}
+
+@media screen and (max-width:600px) {
+
+    body {
+        width: 100%;
+    }
+
+    .tab-left {
+        width: 100%;
+        font-size: 15px;
+
+
+    }
+
+    .tab-right {
+        display: none;
+
+    }
+
+    .firstimg {
+        width: 100%;
+        height: 200px;
+        position: bottom;
+        object-fit: fill;
+    }
+
+    .firstimgtext {
+        top: 32%;
+        left: 42%;
+
+
+    }
+
+    .uzair {
+        display: none;
+    }
+
+    .pictures8 {
+        width: 100%;
+        padding: 5px 32px;
+    }
+
+    .projectimg {
+        width: 100%;
+    }
+
+    .projecttext {
+        background-color: black;
+        color: white;
+        position: absolute;
+        padding: 4px 3px;
+    }
+
+    .about {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .aboutimg {
+        width: calc(100%-10px 32px);
+        padding: 16px 32px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .text {
+        padding: 0px 32px;
+    }
+
+    hr {
+        width: 87%;
+    }
+
+    .contact {
+        width: 100%;
+        height: 40px;
+        border: none;
+        font-size: 20px;
+    }
+
+
+    input {
+        width: calc(86% - 15px);
+        height: 15px;
+        margin: 0px 0px 18px 32px;
+        font-size: 20px;
+        padding: 10px;
+
+    }
+
+    .messagebutton {
+        width: 50%;
+    }
+
+    .map {
+        width: calc(100% -20px 32px 10px 32px);
+    }
+
+    .footer {
+        width: calc(100% - 16px -2px);
+        position: fixed;
+    }
+
+
+}
+
+/* for small devices */
+@media screen and (max-width:420px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .tab-left {
+        width: 100%;
+        font-size: 15px;
+
+
+    }
+
+    .tab-right {
+        display: none;
+
+    }
+
+    .firstimg {
+        width: 100%;
+        height: 200px;
+        bottom: 70%;
+    }
+
+    .firstimgtext {
+        top: 25%;
+        left: 42%;
+
+
+    }
+
+    .uzair {
+        display: none;
+    }
+
+    .pictures8 {
+        width: calc(100%-5px 32px);
+        padding: 5px 32px;
+    }
+
+    .projecttext {
+        background-color: black;
+        color: white;
+        position: absolute;
+        padding: 4px 3px;
+    }
+
+    .aboutimg {
+        width: calc(100%-10px 32px);
+        padding: 16px 32px;
+    }
+
+    .text {
+        padding: 0px 32px;
+    }
+
+    hr {
+        width: 87%;
+    }
+
+    .contact {
+        width: 100%;
+        height: 40px;
+        border: none;
+        font-size: 20px;
+    }
+
+
+    input {
+        width: calc(86% - 15px);
+        height: 15px;
+        margin: 0px 0px 18px 32px;
+        font-size: 20px;
+        padding: 10px;
+
+    }
+
+    .messagebutton {
+        width: 50%;
+    }
+
+    .map {
+        width: calc(100% -20px 32px 10px 32px);
+    }
+
+    .footer {
+        width: calc(100% - 16px -2px);
+        position: fixed;
+    }
+
+
+}
